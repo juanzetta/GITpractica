@@ -17,10 +17,10 @@ class BootStrap {
     def s4 = new Site(idSite: "MLC", name: "COLOMBIA", active: false).save()
     def s5 = new Site(idSite: "MLP", name: "PORTUGAL", active: false).save()
 
-    def c1 = new Category(name: "Autos", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0).save()
-    def c2 = new Category(name: "Inmuebles", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0).save()
-    def c3 = new Category(name: "Bebes", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0).save()
-    def c4 = new Category(name: "Herramientas", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0).save()
-    def c5 = new Category(name: "Indumentaria", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0).save()
+    def c1 = new Category(name: "Autos", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0, site: s1 ).save()
+    def c2 = new Category(name: "Inmuebles", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0,  site: s1).save()
+    def c3 = new Category(name: "Bebes", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0, site: s1).save()
+    def c4 = new Category(name: "Herramientas", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0, site: s1).save()
+    def c5 = new Category(name: "Indumentaria", urlImage: "https://cdn.browshot.com/static/images/not-found.png", visits: 0, site: s1).save()
 
 }
