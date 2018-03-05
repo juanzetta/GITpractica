@@ -4,6 +4,10 @@ class GrailGitController {
 
     def index() { }
 
+    def sitios() {
+        [sitiosList: Site.list(params), sitiosCount: Site.count()]
+    }
+
     def login() {
 
         if (params.username == "Jere" && params.password == "Jere" ) {
