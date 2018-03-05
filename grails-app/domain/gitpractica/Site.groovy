@@ -1,7 +1,7 @@
 package gitpractica
 
 class Site {
-    int idSite
+    String idSite
     String name
     boolean active
 
